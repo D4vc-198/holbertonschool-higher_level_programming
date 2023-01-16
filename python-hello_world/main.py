@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-printf("Best School")
+printf("C is fun!")
