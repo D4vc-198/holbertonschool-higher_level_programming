@@ -3,14 +3,14 @@ def fizzbuzz():
     for n in range(1, 100):
         if (n % 3) == 0:
             if n % 15 == 0:
-                print("{}".format(" FizzBuzz"), end=' ')
+                print("{}".format("FizzBuzz"), end=' ')
             else:
-                print("{}".format(" Fizz"), end='')
+                print("{}".format("Fizz"), end=' ')
         elif (n % 5) == 0:
             if (n % 15) == 0:
-                print("{}".format(" FizzBuzz"), end='')
+                print("{}".format("FizzBuzz"), end=' ')
             else:
-                print("{}".format(" Buzz"), end='')
+                print("{}".format("Buzz"), end=' ')
         elif n == 1:
             print("{}".format(n), end=' ')
         else:
