@@ -1,4 +1,4 @@
-#!/bin/usr/python
+#!/bin/usr/python3
 def new_in_list(my_list, idx, element):
     copyOfList = my_list[:]
     copyOfList[idx] = element
