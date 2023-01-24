@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def max_integer(my_list=[]):
-    maxInt = 0
+    maxInt = -10
     i = 0
     size = len(my_list)
     while i < size:
