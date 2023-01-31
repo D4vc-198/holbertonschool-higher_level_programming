@@ -3,6 +3,11 @@
 
 
 class Square:
+    """ Square Class
+    Attributes:
+        size (int): size of square
+    """
+
     def __init__(self, size=0):
         """
         Method initialize
