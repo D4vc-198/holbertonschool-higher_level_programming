@@ -3,7 +3,7 @@
 
 
 class Square:
-    """ Squar class
+    """ Square class
     Attributes:
         size (int): Size of square
     """
