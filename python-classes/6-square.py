@@ -76,6 +76,7 @@ class Square:
             Area of square
         """
         return self.__size * self.__size
+
     def my_print(self):
         """
         Print methode
