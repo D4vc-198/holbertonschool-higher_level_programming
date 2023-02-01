@@ -3,10 +3,9 @@
 
 
 class Square:
-    """ Class Square
-    Args:
-        size (int): size of square
-        position (tuple): postion of square in 2D space
+    """ Squar class
+    Attributes:
+        size (int): Size of square
     """
 
     def __init__(self, size=0, position=(0, 0)):
