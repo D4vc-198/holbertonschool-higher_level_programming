@@ -1,0 +1,33 @@
+The ``say my name`` module
+==========================
+
+using ``say_my_name``
+
+--------------------
+
+Test import module
+	>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+Test normal
+	>>> say_my_name("Diego", "Valdez")
+	'Diego Valdez'
+
+Test first_name not str
+	>>> say_my_name(1, "Valdez")
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+Test last_name not str
+	>>> say_my_name("Diego", 0)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+
+Test name is empty
+	>>> say_my_name("Diego")
+	'Diego '
+
+Test last name is empty
+	>>> say_my_name("", "Valdez")
+	' Valdez'
