@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
 Add integer or float
+>>> add_integer(1, 4)
+5
 """
 
 

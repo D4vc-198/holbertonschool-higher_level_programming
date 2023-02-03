@@ -1,0 +1,34 @@
+The ``add_integer`` module
+==========================
+
+Using ``add_integer``
+
+	>>> add_integer = __import__("0-add_integer").add_integer
+
+Test normal integers
+	>>> add_integer(1, 4)
+	5
+
+Test float numbers
+	>>> add_integer(float(1.0), float(2.0))
+	3
+
+Test negative number
+	>>> add_integer(-5, 10)
+	5
+
+Test float and int
+	>>> add_integer(2.0, 5)
+	7
+
+Test a not int
+	>>> add_integer("5", 1)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+Test b not int
+	>>> add_integer(5, "1")
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
