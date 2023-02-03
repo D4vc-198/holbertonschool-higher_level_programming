@@ -7,16 +7,13 @@ Module Devide Matrix
 def matrix_divided(matrix, div):
     """
         Devides all elements in matrix
-
         Args:
             matrix (list[list[int/float]]) : matrice
             div (int/float) Devider
-
         Raise:
             TypeError: div not int or float
             TypeError: matix is not a list of list of number
             ZeroDivisionError: Div is 0
-
         Return : New matrix Devided
 
         """
