@@ -31,3 +31,9 @@ Test last name is empty
 Test name
 	>>> say_my_name("Bob", "Lenon")
 	My name is Bob Lenon
+
+Test mising name and last name
+	>>> say_my_name()
+	Traceback (most recent call last):
+	...
+	TypeError: say_my_name() takes at least 1 argument (0 given)
