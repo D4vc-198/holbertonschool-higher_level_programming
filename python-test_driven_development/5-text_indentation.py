@@ -23,4 +23,4 @@ def text_indentation(text):
             a += 1
         else:
             print(text[a], end="")
-        a += 1
+            a += 1
