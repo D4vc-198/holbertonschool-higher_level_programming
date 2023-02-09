@@ -31,3 +31,7 @@ Test negative number
 	>>> my_list.append(2)
 	>>> print(my_list)
 	[-1, 2]
+
+Test print
+	>>> print(my_list)
+	[-1, 2]
