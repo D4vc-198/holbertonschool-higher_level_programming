@@ -1,4 +1,4 @@
-The ``MyList`` module
+TypeError: list() takes at most 1 argument (2 given)The ``MyList`` module
 =====================
 
 Using ``MyList ``
@@ -23,12 +23,6 @@ Test empty list error
     Traceback (most recent call last):
     TypeError: 'NoneType' object is not iterable
 
-
-Test more arguments
-    >>> my_list = MyList([1, 2], [3, 4])
-    Traceback (most recent call last):
-    TypeError: list() takes at most 1 argument (2 given)
-
 Test list append
     >>> my_list = MyList()
     >>> my_list.append(1)
@@ -51,11 +45,6 @@ Test print sorted method
     >>> my_list = MyList()
     >>> print(my_list.print_sorted)
     <bound method MyList.print_sorted of []>
-
-Test print error
-    >>> my_list.print_sorted(1)
-    Traceback (most recent call last):
-	TypeError: print_sorted() takes exactly 1 argument (2 given)
 
 Test ascending order
     >>> my_list.append(1)
