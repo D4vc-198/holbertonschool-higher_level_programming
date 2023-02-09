@@ -21,3 +21,8 @@ Test add item
 	>>> my_list.append(1)
 	>>> print(my_list)
 	[1]
+
+Test sorted not append
+	>>> my_list = MyList()
+	>>> print(my_list)
+	[]
