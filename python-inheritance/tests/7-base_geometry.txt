@@ -25,3 +25,24 @@ Test value is less than 0
 	Traceback (most recent call last):
 	...
 	ValueError: name must be greater than 0
+
+Test area
+	>>> bg = BaseGeometry()
+	>>> print(bg.area())
+	Traceback (most recent call last):
+	...
+	Exception: area() is not implemented
+
+Test value empty
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("age")
+	Traceback (most recent call last):
+	...
+	TypeError: integer_validator() takes exactly 3 arguments (2 given)
+
+Test value 0
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("age", 0)
+	Traceback (most recent call last):
+	...
+	ValueError: age must be greater than 0
