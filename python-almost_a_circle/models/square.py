@@ -2,6 +2,7 @@
 """ Square Module """
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
     """ Represent Square that inherits from Rectangle """
 
