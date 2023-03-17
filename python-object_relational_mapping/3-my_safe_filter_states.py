@@ -16,7 +16,7 @@ def main():
     cur = connectionDb.cursor()
     search = sys.argv[4]
     cur.execute("""SELECT  id,name FROM states where name = %s
-            ORDER by id ASC""",(search,))
+            ORDER by id ASC""", (search,))
     row = cur.fetchall()
     for n in row:
         print(n)
