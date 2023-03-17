@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module list state """
+""" Module list state where name start with N"""
 import sys
 import MySQLdb
 
