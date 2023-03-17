@@ -14,6 +14,7 @@ def main():
                                 charset="utf8"
                                     )
     cur = connectionDb.cursor()
+    search = sys.argv[4]
     query = """SELECT * FROM states where name = '{:s}'
             ORDER by id ASC""".format(search)
     cur.execute(query)
