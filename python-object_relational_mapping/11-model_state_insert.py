@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module add object "Luisiana" to the
+Module add object Luisiana to the
 database hbtn_0e_6_usa
 """
 import sys
