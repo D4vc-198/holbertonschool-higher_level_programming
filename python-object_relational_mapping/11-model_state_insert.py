@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-Module add object Luisiana to the
-database hbtn_0e_6_usa
-"""
+prints the State Object with the name passed as
+argument from the database hbtn_0e_usa"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
@@ -23,5 +22,5 @@ if __name__ == "__main__":
     louisiana = State(name="Louisiana")
     session.add(louisiana)
     session.commit()
-    print(louisina.id)
+    print(louisiana.id)
   session.close()
