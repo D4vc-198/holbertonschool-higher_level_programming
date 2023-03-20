@@ -17,8 +17,7 @@ if __name__ == "__main__":
                             pool_pre_ping=True
                                 )
     session = Session(engine)
-    match = '%a%'
-    re = session.query(State).filter(State.name.like(match)).order_by(State.id)
-    if n in re:
-        print("{}: {}".format(x.id, x.name))
+    for state in session.query(State).order_by(State.id):
+        if "a" in state.name:
+            print("{}: {}".format(state.id, state.name))
     session.close()
