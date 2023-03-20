@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-prints the State Object with the name passed as
-argument from the database hbtn_0e_usa"""
+prints the State object with the name passed as
+argument from the database hbtn_0e_6_usa"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
@@ -19,8 +19,8 @@ if __name__ == "__main__":
                             pool_pre_ping=True
                                 )
     session = Session(engine)
-    louisiana = State(name="Louisiana")
-    session.add(louisiana)
+    new_State = State(name="Louisiana")
+    re = session.add(new_State)
     session.commit()
-    print(louisiana.id)
-  session.close()
+    print(new_State.id)
+    session.close()
