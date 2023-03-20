@@ -20,7 +20,5 @@ if __name__ == "__main__":
     match = '%a%'
     re = session.query(State).filter(State.name.like(match)).order_by(State.id)
     if n in re:
-        print("Nothing")
-    else:
         print("{}: {}".format(x.id, x.name))
     session.close()
