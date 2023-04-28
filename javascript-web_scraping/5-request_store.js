@@ -1,13 +1,12 @@
 #!/usr/bin/node
-// This script gets the contents of a webpage and stores it in a file.
-const axios = require('axios');
+
+const request = require('request');
 const fs = require('fs');
 
-axios.get(process.argv[2])
-  .then(res => {
-    fs.writeFile(process.argv[3], res.data, err => {
-      if (err) {
-        return console.log(err);
-      }
+request(process.argv[2], function (error, _, body) {
+  if (error) { console.log(error); } else {
+    fs.writeFile(process.argv[3], body, 'utf-8', function (err) {
+      if (err) console.log(err);
     });
-  });
+  }
+});
